@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Animate icons</title>
+</head>
+<style>
+    #chain {
+        font-size: 50px;
+
+    }
+    #battery {
+        font-size: 50px;
+
+    }
+    #blutooth {
+        font-size: 50px;
+
+    }
+</style>
+<body>
+    <div id="chain" class="fa"></div>
+
+    <br/>
+    <br/>
+
+    <div id="battery" class="fa"></div>
+    <br/>
+    <br/>
+
+    <div id="blutooth" class="fa"></div>
+
+
+    <script>
+    function breakchain(){
+        let chain = document.getElementById('chain');
+        chain.innerHTML = "&#xf0c1;";
+
+        setTimeout(function(){
+            chain.innerHTML = "&#xf127;";
+        }, 1000);
+    }
+    
+    breakchain();
+    setInterval(breakchain, 2000);
+
+
+    function chargebattery(){
+        let battery = document.getElementById('battery');
+        battery.innerHTML = "&#xf244;";
+
+        setTimeout(function(){
+            battery.innerHTML = "&#xf243;";
+        }, 1000);
+        setTimeout(function(){
+            battery.innerHTML = "&#xf242;";
+        }, 2000);
+        setTimeout(function(){
+            battery.innerHTML = "&#xf241;";
+        }, 3000);
+        setTimeout(function(){
+            battery.innerHTML = "&#xf240;";
+        }, 4000);
+    }
+    
+    chargebattery();
+    setInterval(chargebattery, 5000);
+
+
+    function blue(){
+        let chain = document.getElementById('blutooth');
+        blutooth.innerHTML = "&#xf293;";
+
+        setTimeout(function(){
+            blutooth.innerHTML = "&#xf294;";
+        }, 1000);
+    }
+
+    blue();
+    setInterval(blue, 2000);
+    </script>
+
+</body>
+</html>
